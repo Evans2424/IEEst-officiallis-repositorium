@@ -1,0 +1,16 @@
+
+/*
+Um cilindro desce  uma rampa, partindo do repouso eixo m*r^2/2
+
+*/
+
+func():=(
+	print("velocidade do centro de massa do cilindro"),
+	a:read("altura em metros[ ]:"),
+	
+	
+	sol: sqrt((9.8*a*4)/3),
+	
+	print("Resposta: ", float(sol)),
+	print("")
+)$

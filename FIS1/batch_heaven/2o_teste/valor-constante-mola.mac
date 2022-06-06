@@ -1,0 +1,20 @@
+
+/*
+Um primeiro cilindro, com massa 15 g, fica em equilíbrio a uma altura de 50 cm quando
+é pendurado duma mola vertical. Substituindo o primeiro cilindro por outro de massa
+22 g, este fica em equilíbrio a uma altura de 42 cm. Determine o valor da constante
+elástica da mola.
+*/
+
+func():=(
+	print("valor constante elastica da mola"),
+	m1:read("massa 1 em g[ ]:"),
+	m2:read("massa 2(em g)[ ]:"),
+	a1:read("altura 1(metros)[ ]:"),
+	a2:read("altura 2(metros)[ ]:"),
+	
+	sol: solve([-m1*10e-3*9.8 = k*(a1-x), -m2*10e-3*9.8=k*(a2-x)], [k,x]),
+	
+	print("Resposta: ", float(sol)),
+	print("")
+)$

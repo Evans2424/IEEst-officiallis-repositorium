@@ -1,0 +1,21 @@
+/*
+Num objeto com massa de 0.4 kg atuam unicamente duas forças
+externas: 2ˆı − 6 ˆ e 8ˆı + 10 ˆ (ambas em newtons). Determine o
+módulo da aceleração do centro de massa do objeto.
+Neste caso, a resposta e 26.9
+*/
+
+func():=(
+	print("modulo da aceleração do centro de massa do objeto"),
+	m: read("massa do objeto(em kg):"),
+	x1:read("x da forca 1[ ]:"),
+	y1:read("y da forca 1	[ ]:"),
+	x2:read("x da forca 2[ ]:"),
+	y2:read("y da forca 2	[ ]:"),
+	valor1: x1 + x2,
+	valor2: y1+y2,
+	valor: sqrt(valor1*valor1 + valor2*valor2),
+	sol: float(valor/m),
+	print("resposta ", float(sol)),
+	print("")
+)$

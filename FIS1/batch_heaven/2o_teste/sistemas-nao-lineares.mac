@@ -1,0 +1,27 @@
+/*
+	Para exs tipo:
+. O sistema dinamico n˜ao linear:
+x˙ = x y − 4 x + y − 4 ˙y = x y + x − 1 y − 1
+tem um ponto de equilıbrio em x = 1, y = 4. Qual e
+o sistema linear que aproxima o sistema n˜ao linear na
+vizinhanca desse ponto de equilıbrio?
+a resposta é 2y e 5x 
+*/
+
+
+
+
+
+acels():=(
+	print("programa sistemas nao linear "),
+	equacaodox:read("equacao do x [ ]:"),
+	equacaodoy:read("equacao do y [ ]:"),
+	j: jacobian([equacaodox, equacaodoy],[x,y]),
+	xdoE: read("x do PE [ ]:"),
+	ydoE: read("y do PE [ ]:"),
+	sol: subst([x=xdoE, y=ydoE],j),
+	
+	print("solucao: ", sol),
+	print("")
+	
+)$

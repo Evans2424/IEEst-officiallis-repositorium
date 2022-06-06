@@ -1,0 +1,5 @@
+/*só funcionou no xMaxima*/
+
+matriz():=(a:read("Digite a equacao para x: "),
+    	b:read("Digite a equacao para y: "),
+    	m:coefmatrix([a,b],[x,y]));

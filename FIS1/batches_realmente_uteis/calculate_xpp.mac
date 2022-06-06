@@ -1,0 +1,16 @@
+/* [wxMaxima: comment start ]
+Calcular xpp a partir de Ec(xp, yp), U(y), e y(x)
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+calculate_xpp():=(gradef(y,t,yp),gradef(yp,t,ypp), gradef(x, t, xp), gradef(xp, t, xpp),
+                     y:read("Equação de y em função a x:"),
+                     yp: diff(y, t),
+                     Ec:read("Energia cinética (Ec):"),
+                     U:read("Energia potencial (U):"),
+                     solve(diff(diff(Ec,xp),t)-diff(Ec,x)+diff(U,x),xpp));
+/* [wxMaxima: input   end   ] */
+
+
+

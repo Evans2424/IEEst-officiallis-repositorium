@@ -1,0 +1,10 @@
+conservative():=(
+
+a: read("Equacao 1 : "),
+b: read(" equacao 2 :"),
+
+sum : (diff(a,x) + diff(b,y)),
+
+if sum = 0 then ( print(" conservativo"))
+
+);

@@ -1,0 +1,18 @@
+/* 
+Um bloco com massa m = 6 kg encontra-se sobre a superfície
+de uma mesa horizontal. Sobre o bloco atua uma força externa
+F®, com módulo de 30 N e direção que faz um ângulo α = 40◦
+com a horizontal, tal como mostra a figura. Calcule o módulo da
+reação normal entre o bloco e a mesa.
+Neste caso, a resposta é 78.08
+
+*/
+
+func():= (print("modulo da reacao normal entre o bloco e a mesa"),
+    m: read("massa(em kg): "),
+    F: read("Modulo da forca (em N): "),
+    angulo: read("angulo que faz com a horizontal "),
+	R: -m*9.8 + sin(angulo*3.14/180) * -F,
+    print("Solucao: ", float(R)),
+    print("")
+);

@@ -1,0 +1,22 @@
+/*
+A express˜ao da energia cinetica de um sistema conservativo e 1
+2
+
+s
+2 + 5 s
+2
+onde s e a posic˜ao na trajetoria, e a
+express˜ao da energia potencial total e 15 s. O sistema tem
+um unico ponto de equilıbrio; determine o valor de s nesse
+ponto de equilibrio.
+*/
+
+func():=(
+	print("valor de s , ponto de equilibrio"),
+	Ec:read("Expressao da energia cinetica[ ]:"),
+	U:read("Expressao da energia potencial [ ]:"),
+	eq: diff(diff(Ec,si),t)-diff(Ec,s) + diff(U,s) = 0,
+	sol: solve([si,15-5*s],[si,s]),
+	print("resposta ", float(sol)),
+	print("")
+)$

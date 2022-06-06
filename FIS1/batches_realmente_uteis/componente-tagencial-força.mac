@@ -1,0 +1,18 @@
+/*
+Quando uma partıcula passa por um ponto P, a sua velocidade e 4ˆı + 2 ˆ (SI) e a for¸ca resultante ´e 6ˆı + 6 ˆ
+(SI). Calcule o valor da componente tangencial da for¸ca
+resultante nesse ponto.
+o valor e 8.05
+*/
+
+func():=(
+	print("valor da componente tangencial da forca num ponto"),
+	Vx:read("velocidade(coordenada x)[ ]:"),
+	Vy:read("velocidade(coordenada y)[ ]:"),
+	Frx:read("forca resultante(coordenda x) [ ]:"),
+	Fry:read("forca resultante(coordenda y) [ ]:"),
+	cos: (Vx*Frx + Vy*Fry)/(sqrt(Vx^2+Vy^2)*sqrt(Frx^2+Fry^2)),
+	Ft: sqrt(Frx^2+Fry^2) * cos,
+	print("Resposta: ", float(Ft)),
+	print("")
+)$

@@ -1,0 +1,21 @@
+
+/*
+Para subir uma caixa com massa de 60 kg, desde o ch˜ao
+ate um cami˜ao com altura 115 cm, um homem empurra
+a caixa sobre cilindros (para reduzir o atrito) ao longo de
+uma rampa inclinada 30◦
+em rela¸c˜ao `a horizontal. Determine o trabalho m´ınimo (quando o atrito e a resistˆencia
+do ar s˜ao desprez´aveis) que dever´a realizar o homem para
+subir a caixa ao cami˜ao
+
+*/
+
+func():=(
+	print("Determine o trabalho minimo"),
+	m:read("massa da caixa[ ]:"),
+	a:read("altura do cami˜ao(em metros)[ ]:"),
+	W: m*a*9.8, 
+	
+	print("Resposta: ", float(W)),
+	print("")
+)$

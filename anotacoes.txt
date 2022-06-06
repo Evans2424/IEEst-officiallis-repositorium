@@ -1,0 +1,42 @@
+* Ler ficheiros palavra a palavra *
+
+#include <fstream>
+ifstream reader(ficheiro)
+string word
+
+while(reader >> word)
+    \ vai correr até à última palavra do ficheiro \
+
+_____________________________________________________________
+
+* ler ficheiros linha a linha *
+
+#include <fstream>
+ifstream reader(ficheiro)
+string line
+
+while(getline(reader, line))
+    \ vai correr até à última linha \
+
+OU
+
+for(string line, getline(reader, line))
+
+_____________________________________________________________
+
+* percorrer as palavras numa string (frase com eventuais espaços) *
+
+#include <sstream>
+string s, word
+istringstream stream(s)
+while(stream >> word)
+    \ vai correr até à última palavra na string s \
+
+______________________________________________________________
+
+* escrever num ficheiro *
+
+#include <fstream>
+ofstream writter(ficheiro)
+string word
+writter >> word;

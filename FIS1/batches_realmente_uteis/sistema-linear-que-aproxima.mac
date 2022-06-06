@@ -1,0 +1,18 @@
+
+/*
+O sistema dinamico nao linear "". tem um ponto de equilibrio qual o sistema linear que aproxima vizinhança
+
+*/
+
+func():=(
+	print("sistema linear que aproxima o sistema nao linear nessa vizinhança"),
+	xp:read("x do ponto de equilibrio:"),
+	yp:read("y do ponto de equilibrio:"),
+	exp1:read("expressao do xi:"),
+	exp2:read("expressao do yi:"),
+	j:jacobian([exp1,exp2],[x,y]),
+	sol: subst([x= xp, y = yp],j),
+	
+	print("Resposta: ", float(sol)),
+	print("")
+)$

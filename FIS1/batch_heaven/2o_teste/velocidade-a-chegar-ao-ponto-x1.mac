@@ -1,0 +1,21 @@
+/* 
+O gr´afico da figura representa a energia potencial U, em
+joules, em fun¸c˜ao da posi¸c˜ao x, em metros, duma part´ıcula
+com massa igual a 9 kg; os valores no gr´afico s˜ao x1 = 9,
+x2 = 18, U1 = 729 e U2 = 2916. Se a part´ıcula parte
+do repouso na posi¸c˜ao x2, com que velocidade chegar´a ao
+ponto x1?
+
+*/
+
+func():= (print("velocidade a chegar ao ponto x1"),
+    m: read("massa em kg: "),
+    u1: read("U1: "),
+	u2: read ("U2") ,
+	resultado: (u2-u1)/0.5/m,
+	
+	Afinal: sqrt(resultado),
+	
+    print("Solucao: ", float(Afinal)),
+    print("")
+);

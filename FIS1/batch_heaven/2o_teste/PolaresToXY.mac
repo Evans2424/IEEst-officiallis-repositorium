@@ -1,0 +1,7 @@
+/* [wxMaxima: input   start ] */
+polaresToXY(op,rp):= (r:sqrt(x^2 + y^2), cos: x/r, sen: y/r, fx: rp*cos - r*sen * op, fy: rp*sen + r*cos*op, plotdf([fx, fy], [x, y]));
+
+/* [wxMaxima: input   end   ] */
+
+
+

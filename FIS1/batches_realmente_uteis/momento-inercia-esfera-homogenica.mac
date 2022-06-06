@@ -1,0 +1,21 @@
+
+
+/* 
+Calcule o momento de inércia de uma esfera homogénea com 1
+centímetro de raio e massa igual a 21 gramas, que roda à volta
+dum eixo tangente à superfície da esfera, sabendo que o momento
+de inércia duma esfera de raio R e massa m à volta do eixo que
+passa pelo centro é 2 m R2/5
+A resposta é 2.94e-6
+
+*/
+
+func():= (print("momento da inercia de uma esfera homogenica (...)"),
+    massa: read("massa(em kg): "),
+    raio: read("Raio (em m): "),
+	equacao: read ("expressao da inercia a volta do eixo que passa pelo centro: ") , 
+	valor: subst([m = massa, R = raio], equacao),
+    R: valor + raio^2 * massa,
+    print("Solucao: ", float(R)),
+    print("")
+);

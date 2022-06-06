@@ -1,0 +1,22 @@
+/* [wxMaxima: comment start ]
+Passar equações de fase de coordenadas polares para xp e yp. Realiza o plotdf de seguida.
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+polaresToXY():=(   print("info: Rodar duas vezes para funcionar :/"),
+                    op:read("Equação θp: "),
+                    rp:read("Equação rp: "),
+                    r:sqrt(x^2+y^2),
+                    cos: x/r,
+                    sen: y/r,
+                    fx: rp*cos-r*sen*op,
+                    fy: rp*sen+r*cos*op,
+                    print("Equação xp: ", fx),
+                    print("Equação yp: ", fy),
+                    plotdf([fx, fy], [x, y])
+);
+/* [wxMaxima: input   end   ] */
+
+
+

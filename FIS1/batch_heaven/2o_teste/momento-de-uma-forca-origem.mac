@@ -1,0 +1,18 @@
+/* 
+Aplica-se uma for¸ca 5ˆı + 4 ˆ num ponto com vetor posi¸c˜ao
+4ˆı − 1 ˆ (unidades SI). Determine o m´odulo do momento
+dessa for¸ca, em rela¸c˜ao `a origem.
+Neste caso a resposta é 21N.
+*/
+
+func():= (print("Modulo do momento de um forca em relacao a origem"),
+    xf: read("x da forca: "),
+    yf: read("y da forca: "),
+    xp: read("x da posicao: "),
+	yp: read("y da posicao: "),
+	valor1: xf * xp,
+	valor2:yf*yp,
+	R: sqrt(valor1^2+valor2^2),
+    print("Solucao: ", float(R)),
+    print("")
+);

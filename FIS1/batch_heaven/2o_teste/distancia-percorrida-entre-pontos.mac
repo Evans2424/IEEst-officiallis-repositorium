@@ -1,0 +1,19 @@
+/* 
+A posi¸c˜ao dum ponto ao longo dum percurso, em fun¸c˜ao do
+tempo, ´e dada pela express˜ao s = 30 t−3 t
+2
+(SI). Determine
+a distancia percorrida pelo ponto entre t = 0 e t = 7.5 s.
+*/
+
+func():= (print("Distancia percorrida entre 2 pontos. Fazer a derivada da funcao igualar a 0. esse valor vai ser valor."),
+    valor: read("valor?: "),
+    v: read("numero associado a t na funcao da velocidade: "),
+	t: read ("segundo tempo") ,
+	A1: ((t-valor)*t*2)/2,
+	A2: (valor*v)/2,
+	Afinal: A1+A2,
+	
+    print("Solucao: ", float(Afinal)),
+    print("")
+);

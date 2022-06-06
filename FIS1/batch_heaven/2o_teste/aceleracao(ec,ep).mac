@@ -1,0 +1,5 @@
+aceleracao() := (gradef(y,t,yp),
+           gradef(yp,t,ypp),
+           Ec: read("Energia cinetica:(relacao a y)"),
+           U: read("Energia potencial:(relacao a y)"), 
+           solve(diff(diff(Ec,yp),t)-diff(Ec,y)+diff(U,y),ypp));

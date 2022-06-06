@@ -1,0 +1,31 @@
+/* 
+Uma part´ıcula de massa m desloca-se ao longo da curva
+y = x
+2/2, no plano horizontal xy. Assim sendo, basta uma
+´unica vari´avel generalizada para descrever o movimento;
+escolhendo a vari´avel x, a express˜ao da energia cin´etica ´e
+Ec =
+m x˙
+2
+2
+
+1 + x
+2
+. Encontre a express˜ao para a for¸ca
+generalizada Qx respons´avel pelo movimento da part´ıcula.
+
+
+*/
+
+func():= (print("expressao para a forca generalizada qx responsavel pelo movimento da particula(um ponto 1, dois pontos 2...)"),
+    ec: read("ec: "),
+	gradef(x,t,x1),
+	gradef(x1,t,x2),
+	
+	resultado: diff(diff(ec,x1),t)-diff(ec,x),
+	
+
+	
+    print("Solucao: ", float(resultado)),
+    print("")
+);

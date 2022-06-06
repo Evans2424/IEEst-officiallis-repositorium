@@ -1,0 +1,26 @@
+/* 
+A proje¸c˜ao x da acelera¸c˜ao duma part´ıcula aumenta em
+fun¸c˜ao do tempo, de acordo com a express˜ao ax = 3 t
+(unidades SI). No instante t = 0 a proje¸c˜ao x da velocidade
+´e nula e a componente da posi¸c˜ao ´e x = 4 m. Determine a
+proje¸c˜ao x da posi¸c˜ao em t = 6 s.
+neste casa a resposta é 112m.
+
+
+
+*/
+
+func():= (print("modulo a reacao normal"),
+    ax: read("expressao ax"),
+    x0: read("componente da posicao x=: "),
+	pos: read("t=: "),
+	vx: integrate(ax, t, 0, t),
+	x: x0+integrate(vx, t, 0, t),
+	
+	resultado: subst(t=pos,x),
+	
+
+	
+    print("Solucao: ", float(resultado)),
+    print("")
+);

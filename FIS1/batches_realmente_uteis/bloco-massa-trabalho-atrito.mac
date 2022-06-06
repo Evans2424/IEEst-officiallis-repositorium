@@ -1,0 +1,23 @@
+
+/*
+Um bloco de massa 3 kg desce deslizando sobre a superfıcie
+de um plano inclinado, partindo do ponto A com valor
+da velocidade igual a 3 m/s e parando completamente no
+ponto B. As alturas dos pontos A e B, medidas na vertical desde a base horizontal do plano, s˜ao: hB = 10 cm e
+hA = 100 cm. Calcule o trabalho realizado pela for¸ca de
+atrito, desde A at´e B.
+
+*/
+
+func():=(
+	print("Trablho realizado pela forca de atrito"),
+	m:read("massa do bloco(kg)[ ]:"),
+	aA:read("altura A(em metros)[ ]:"),
+	aB:read("altura B(em metros)[ ]:"),
+	V:read("velocidade(em metros/s)[ ]:"),
+	
+	W: -0.5*m*V^2-m*9.8*aA + m*9.8*aB,
+	
+	print("Resposta: ", float(W)),
+	print("")
+)$

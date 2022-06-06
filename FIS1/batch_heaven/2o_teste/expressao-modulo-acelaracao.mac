@@ -1,0 +1,24 @@
+/* 
+
+14. O vetor velocidade duma part´ıcula, em fun¸c˜ao do tempo,
+´e: 2 t
+2 ˆı + 2 t
+3
+ˆ (unidades SI). Encontre a express˜ao para o
+m´odulo da acelera¸
+
+
+*/
+
+func():= (print("expressao para o modulo da acelaracao (derivar a expressao dada e partir dai)"),
+    i: read("expressao associada a i: "),
+    j: read("expressao associada a j: "),
+	resultado: sqrt(i^2+j^2),
+
+
+	
+
+	
+    print("Solucao: ", float(resultado)),
+    print("")
+);

@@ -1,0 +1,22 @@
+/*
+Um sistema de pesos e roldanas, conservativo, tem um
+´unico grau de liberdade y. A energia cin´etica ´e dada pela
+express˜ao 5 m y˙
+2
+e a energia potencial ´e: U = −6 m g y,
+onde g ´e a acelera¸c˜ao da gravidade e m ´e um par´ametro
+com unidades de massa. Determine o valor da acelera¸c˜ao
+y¨.
+*/
+
+func():=(
+	print("valor da acelaracao yii(pontos correspondem a i's)"),
+	Ec:read("Expressao da energia cinetica[ ]:"),
+	U:read("Expressao da energia potencial [ ]:"),
+	gradef(y,t,yi),
+	gradef(yi,t,yii),
+	eq: diff(diff(Ec,yi),t)-diff(Ec,y) + diff(U,y),
+	sol: solve(eq,yii),
+	print("resposta ", sol),
+	print("")
+)$

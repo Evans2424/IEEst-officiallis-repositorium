@@ -1,0 +1,15 @@
+/* 
+Uma partícula desloca-se ao longo duma calha circular com
+aceleração angular a aumentar em função do tempo, de acordo
+com a expressão α = 8 t (unidades SI). No instante t = 0, a
+partícula encontra-se em repouso na posição em que o ângulo θ é
+igual a 0. Calcule o valor do ângulo, em radianos, em t = 2.5 s.
+*/
+
+func():= (print("valor do angulo em radianos em t a um valor"),
+    funcao: read("Integral duplo da velocidade angular(ordem a t): "),
+    rot: read("instante t(em segundos): "),
+    R: subst( t = rot , funcao),
+    print("Solucao: ", float(R)),
+    print("")
+);

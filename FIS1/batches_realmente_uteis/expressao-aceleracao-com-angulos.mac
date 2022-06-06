@@ -1,0 +1,22 @@
+
+/*
+As expressões das energias cinética e potencial dum sistema conservativo com dois
+graus de liberdade, x e θ, são: e U = -7 x θ. Encontre a expressão
+da aceleração .
+*/
+
+func():=(
+	print("expressao aceleracao"),
+	Ec:read("expressao Ec(angulo com q, i para pontos)[]:"),
+	U:read("expressao de U?[ ]:"),
+	gradef(x, t, xi),
+	gradef(xi,t,xii),
+	gradef(q,t,qi),
+	gradef(qi,t,qii),
+	cenas: diff(diff(Ec,qi),t) - diff(Ec,q)+diff(U,q),
+	sol:solve(cenas,qii),
+	
+	
+	print("Resposta: ", float(sol)),
+	print("")
+)$
